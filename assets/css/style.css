@@ -10,12 +10,13 @@ body {
 }
 
 h1 {
-    /* Fit content gives a box around the name*/
+    /* Fit content gives a blue/purple box around the name*/
     background-color: rgb(50, 4, 122);
     width: fit-content;
     color: rgb(219, 215, 219);
-    display: inline;
-    line-height: 50px;
+    display: inline; /*Important to get h1 and nav on same line */
+    line-height: 50px; /*Centers it vertically*/
+    padding: 0px 10px 0px 20px;
 }
 
 header {
@@ -25,7 +26,7 @@ header {
 
 header div img {
     width: 100%;
-    height: 150px;
+    height: 200px;
 }
 
 header div {
@@ -35,6 +36,7 @@ header div {
  header div p {
     background-color: rgb(50, 4, 122);
     width: fit-content;
+    padding: 0px 10px;
     color: rgb(219, 215, 219);
     font-size: 150%;
     position: absolute;
@@ -62,6 +64,7 @@ header nav li a {
 
 p {
     font-size: 16px;
+    padding: 0px 20px 0px 40px;
 }
 
 main {
@@ -76,16 +79,14 @@ main {
     flex: 1;
     margin-top: 20px;
     padding: 20px;
-    position: relative;
 }
 
 .content-section h2 {
-    position: absolute;
     font-size: 48px;
     width: 25%;
     clear: right;
-    left: 100px;
-    top: 20px;
+    display: inline-flex;
+    justify-content: space-around;
 }
 
 #about img {
@@ -97,12 +98,12 @@ main {
     align-self: flex-start;   
 }
 
-#work {
+#work, #contact {
     clear: right;
 }
 
 .right {
-    float: right;
+    float:right;
     width: 75%;
     border-left: 5px solid rgb(50, 4, 122);
     display: flex;
@@ -115,12 +116,55 @@ main {
     list-style-type: none;
 }
 
-.large-image {
-    max-width: 1000px;
-    max-height: 600px;
-    padding: 60px;
-}
-
 .big {
     height: 100px;
 }
+
+.work-image {
+    width: 400px;
+    height: 300px;
+}
+
+.large-image {
+    width: 800px;
+    height: 600px;
+    float: left;
+}
+
+td {
+    position: relative;
+    text-align: center;
+}
+
+.overlay {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    top: 0;
+    left: 0;
+    border: solid 5px rgb(50, 4, 122);
+    background-color: rgba(207, 182, 224, 0.5);
+} 
+
+table {
+    padding-left: 60px;
+}
+
+.overlay:hover{
+    cursor: pointer;  
+    background-color: rgba(207, 182, 224, 0);
+}
+
+td p {
+    background-color: rgb(50, 4, 122);
+    color: rgb(219, 215, 219);
+    position: absolute;
+    bottom: 50px;
+    left: 0;
+    font-size: 32px;
+}
+
+td p span {
+    font-size: 20px;
+}
+
