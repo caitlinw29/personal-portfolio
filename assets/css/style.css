@@ -1,4 +1,4 @@
-* {
+* { /*Clear pre-sets*/
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -7,59 +7,77 @@
 body {
     font-family: Arial, sans-serif;
     background-color: rgb(248, 221, 226);
+    color:rgb(50, 4, 122);
 }
 
-h1 {
-    /* Fit content gives a blue/purple box around the name*/
+.color-box {
     background-color: rgb(50, 4, 122);
-    width: fit-content;
+    width: fit-content; /* Fit-content gives a blue/purple box around the name*/
     color: rgb(219, 215, 219);
-    display: inline; /*Important to get h1 and nav on same line */
-    line-height: 50px; /*Centers it vertically*/
-    padding: 0px 10px 0px 20px;
+    padding: 0px 20px 0px 30px; /*padding gives a bit of color on the left and right side of the text*/
 }
 
-header {
-    width: 100%;
+.header {
     background-color: rgb(158, 156, 158);
+    height: 240px;
 }
 
-header div img {
-    width: 100%;
-    height: 200px;
+.row {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    flex: 1;
 }
 
-header div {
+.column {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    flex: 1;
+}
+
+.back-image {
+    background-image: url(../images/background.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 70%;
     position: relative;
 }
 
- header div p {
+.text-overlay {
     background-color: rgb(50, 4, 122);
     width: fit-content;
     padding: 0px 10px;
     color: rgb(219, 215, 219);
-    font-size: 150%;
+    font-size: 200%;
     position: absolute;
     bottom: 20px;
     right: 40px;
 }
 
-header nav {
-    float: right;
-    margin-right: 20px;
-    height: 50px;
+.nav {
+    display: flex;
+    align-items: flex-end;
+    margin-right: 50px;
+    padding-bottom: 5px;
 }
 
-header nav ul li {
+.nav ul li {
     display: inline;
     list-style-type: none;
-    margin: 30px 5px;
-    line-height: 50px;
+    padding: 5px;
+    font-size: 18px;
 }
 
-header nav li a {
-    text-decoration-thickness: 15%;
+.nav li a {
+    text-decoration: none;
+    border-bottom: solid 3px rgb(50, 4, 122);
     color: rgb(50, 4, 122);
+}
+
+.nav li a:hover {
+    color: rgb(248, 221, 226);
+    border-bottom: solid 3px rgb(248, 221, 226);
 }
 
 p {
@@ -67,47 +85,27 @@ p {
     padding: 0px 20px 0px 40px;
 }
 
-main {
-    display: flex;
-    flex-direction: column;
-    width: 100%;
-    height: 800px;
-    color:rgb(50, 4, 122);
-}
-
-.content-section {
-    flex: 1;
+.box {
     margin-top: 20px;
     padding: 20px;
 }
 
-.content-section h2 {
+h2 {
     font-size: 48px;
-    width: 25%;
-    clear: right;
-    display: inline-flex;
-    justify-content: space-around;
+    margin: 20px;
+}
+
+.border {
+    border-top: 5px solid rgb(50, 4, 122);
+    display: flex;
+    align-items: center;
 }
 
 #about img {
-    float: left;
-    height: 200px;
-    width: 300px;
     border-radius: 20%;
     margin: 10px;
-    align-self: flex-start;   
-}
-
-#work, #contact {
-    clear: right;
-}
-
-.right {
-    float:right;
-    width: 75%;
-    border-left: 5px solid rgb(50, 4, 122);
     display: flex;
-    align-items: center;
+    align-self: center;   
 }
 
 .right ul li {
@@ -116,21 +114,86 @@ main {
     list-style-type: none;
 }
 
-.big {
-    height: 100px;
+.lg-responsive-img {
+    width: 50%;
+    height: auto;
 }
 
-.work-image {
-    width: 400px;
-    height: 300px;
+.responsive-img {
+    width: 25%;
+    height: auto;
 }
 
-.large-image {
-    width: 800px;
-    height: 600px;
-    float: left;
+.flex-grow-0 {
+    flex-grow: 0;
 }
 
+@media  screen and (min-width: 768px) {
+        .tablet-row {    
+            align-items: flex-start;    
+            display: flex;    
+            flex-direction: row;
+        }
+        
+        .tablet-col {    
+            align-items: flex-start;    
+            display: flex;    
+            flex-direction: column;
+        }
+        
+        .tablet-w25 {    
+            width: 25%;
+        }
+
+        .tablet-w75 {
+            width: 75%;
+            border-top: 0px;
+            border-left: 5px solid rgb(50, 4, 122);
+            display: flex;
+            align-items: center;
+        }
+
+        .nav li a {
+            padding-bottom: 3px;
+        }
+
+        .color-box {
+            margin: 10px 0px; /*margin gives a bit of gray edging around the box*/
+            line-height: 50px; /*line-height gave a small bit of color around the top/bottom edges of the text*/
+        }
+
+        .nav {
+            line-height: 78px;
+        }
+}
+
+@media screen and (max-width:500px) {
+    h2 {
+        font-size: 26px;
+    }
+
+    .nav ul li {
+        font-size: 16px;
+    }
+
+    .header {
+        height:150px;
+    }
+
+    .text-overlay{
+        right: 0px;
+        font-size: 26px;
+    }
+
+    .lg-responsive-img {
+        width: 100%;
+    }
+    
+    .responsive-img {
+        width: 100%;
+    }
+}
+/*
 td {
     position: relative;
     text-align: center;
@@ -167,4 +230,5 @@ td p {
 td p span {
     font-size: 20px;
 }
+*/
 

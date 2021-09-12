@@ -8,69 +8,58 @@
         <link rel="stylesheet" href="./assets/css/style.css">
     </head>
     <body>
-        <header>
-            <!--nbsp provides cushion for color box-->
-            <h1> Caitlin Wall </h1>
-            <nav>
-                <ul>
-                    <li><a href="#about">About Me</a></li>
-                    <li><a href="#work">Work</a></li>
-                    <li><a href="#contact">Contact Me</a></li>
-                    <li><a href="#">Resume</a></li>
-                </ul>
-            </nav>
-            <div>
-                <img src="./assets/images/background.png" alt="background image"/>
-                <p> Welcome to my page! </p>
+        <header class="column header">
+            <div class="column tablet-row">
+                <h1 class="column"> <span class="color-box">Caitlin Wall</span></h1>
+                <nav class="column nav">
+                    <ul>
+                        <li><a href="#about">About Me</a></li>
+                        <li><a href="#work">Work</a></li>
+                        <li><a href="#contact">Contact Me</a></li>
+                        <li><a href="#">Resume</a></li>
+                    </ul>
+                </nav>
+            </div>
+            <div class="back-image">
+                <p class="text-overlay"> Welcome to my page! </p>
             </div>
         </header> 
         <main> 
-            <section id="about" class="content-section">
-                <h2>About Me</h2>
-                <div class="right">
+            <section id="about" class="box column tablet-row">
+                <h2 class="tablet-w25">About Me</h2>
+                <div class="tablet-row border tablet-w75">
                     <p>
                         Hello! Thank you for checking out my portfolio. I am currently shifting careers from being an Elementary School Teacher to being a Full-Stack Developer.
                         I am completing the GA Tech Coding Boot Camp, and have a couple months of self-study under my belt already. I enjoy debugging code, and absolutely love making interactive web pages.
                         Please feel free to check out some of my favorite projects and connect with me below! 
                     </p>
-                    <img src="./assets/images/personal-picture.JPG" alt="Picture of Caitlin" />
+                    <img class="flex-grow-0" width="300" src="./assets/images/personal-picture.JPG" alt="Picture of Caitlin" />
                 </div>
             </section>
-            <section id="work" class="content-section">
-                <h2>Work</h2>
-                <table class="right">
-                    <tr> 
-                        <td colspan="2">
-                            <img class="large-image" src="./assets/images/villager-bingo.PNG" alt="Animal Crossing Bingo Game" />
+            <section id="work" class="box column tablet-row">
+                <h2 class="tablet-w25">Work</h2>
+                <div class="tablet-w75 border">
+                            <img class="lg-responsive-img" src="./assets/images/villager-bingo.PNG" alt="Animal Crossing Bingo Game" />
                             <div class="overlay"></div>
                             <p>ACNH Bingo <br> <span>HTML/CSS/JS</span></p>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>
-                            <img class="work-image" src="./assets/images/villager-generator.PNG" alt="Animal Crossing Villager Generator" />
+                        
+                            <img class="responsive-img" src="./assets/images/villager-generator.PNG" alt="Animal Crossing Villager Generator" />
                             <div class="overlay"></div>
-                        </td>
-                        <td>
-                            <img class="work-image" src="./assets/images/Horiseon.PNG" alt="Horiseon web page" />
+                        
+                            <img class="responsive-img" src="./assets/images/Horiseon.PNG" alt="Horiseon web page" />
                             <div class="overlay"></div>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>
-                            <img class="work-image" src="./assets/images/coming-soon.jpeg" alt="Coming Soon" />
+                        
+                            <img class="responsive-img" src="./assets/images/coming-soon.jpeg" alt="Coming Soon" />
                             <div class="overlay"></div>
-                        </td>
-                        <td>
-                            <img class="work-image" src="./assets/images/coming-soon.jpeg" alt="Coming Soon" />
+                       
+                            <img class="responsive-img" src="./assets/images/coming-soon.jpeg" alt="Coming Soon" />
                             <div class="overlay"></div>
-                        </td>
-                    </tr>
-                    </table>
+                </div>
+                        
             </section>
-            <section id="contact" class="content-section">
-                <h2>Contact Me</h2>
-                <div class="right big">
+            <section id="contact" class="box column tablet-row">
+                <h2 class="tablet-w25">Contact Me</h2>
+                <div class="tablet-w75 border bottom-contact">
                     <ul>
                         <li><a href="tel:678-908-1670">678-908-1670</a></li>
                         <li><a href="mailto:caitlinwall96@gmail.com">caitlinwall96@gmail.com</a></li>
@@ -81,10 +70,5 @@
                 </div>
             </section>
         </main>
-
-        
-        <footer>
-
-        </footer>
     </body>
 </html>
