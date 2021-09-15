@@ -1,4 +1,10 @@
-* { /*Clear pre-sets*/
+:root {
+    --gray: #30343e;
+    --white: #edeef7;
+    --aqua: #81cece;
+    --blue: #3f587a;
+}
+* {      /*Clear pre-sets*/
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -6,19 +12,19 @@
 
 body {
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    background-color: #edeef7;
-    color:#3f587a;
+    background-color: var(--white);
+    color:var(--blue);
 }
 
 .color-box {
-    background-color: #81cece;
+    background-color: var(--aqua);
     width: fit-content; /* Fit-content gives a blue/purple box around the name*/
-    color: #30343e;
+    color: var(--gray);
     padding: 0px 20px 0px 30px; /*padding gives a bit of color on the left and right side of the text*/
 }
 
 .header {
-    background-color: #30343e;
+    background-color: var(--gray);
     height: 240px;
     position: relative;
 }
@@ -27,7 +33,7 @@ body {
     display: flex;
     flex-direction: row;
     justify-content: center;
-    flex: 1;
+    flex: 1; 
 }
 
 .column {
@@ -46,9 +52,9 @@ body {
 }
 
 .text-overlay {
-    background-color: #81cece;
+    background-color: var(--aqua);
     width: fit-content;
-    padding: 0px 10px;
+    padding: 5px 10px;
     color: #233d69;
     font-size: 200%;
     position: absolute;
@@ -72,18 +78,19 @@ body {
 
 .nav li a {
     text-decoration: none;
-    border-bottom: solid 3px #81cece;
-    color: #81cece;
+    border-bottom: solid 3px var(--aqua);
+    color: var(--aqua);
 }
 
 .nav li a:hover {
-    color: #edeef7;
-    border-bottom: solid 3px #edeef7;
+    color: var(--white);
+    border-bottom: solid 3px var(--white);
 }
 
 #about p {
-    font-size: 16px;
+    font-size: 20px;
     padding: 0px 20px 0px 40px;
+    line-height: 1.5;
 }
 
 .box {
@@ -97,7 +104,7 @@ h2 {
 }
 
 .border {
-    border-top: 5px solid #3f587a;
+    border-top: 5px solid var(--blue);
     display: flex;
     align-items: center;
 }
@@ -117,10 +124,29 @@ header img {
     align-items: flex-start;
 }
 
+.bottom-contact {
+    display: flex;
+    justify-content: space-around;
+    line-height: 2;
+    height: 150px;
+}
+
 #contact ul li {
     display: inline;
     list-style-type: none;
     margin-left: 40px;
+}
+
+#contact ul li a {
+    text-decoration: none;
+    border-bottom: solid 3px var(--blue);
+    padding-bottom: 5px;
+    color: var(--blue);
+}
+
+#contact li a:hover {
+    color: var(--aqua);
+    border-bottom: solid 3px var(--aqua);
 }
 
 .flex-grow-0 {
@@ -131,23 +157,32 @@ header img {
     position: absolute;
     bottom: 20px;
     left: 0px;
-    background-color: #81cece;
-    color:#3f587a;
+    background-color: var(--aqua);
+    color:var(--blue);
     padding: 10px;
+    font-size: 180%;
 }
 
 .card-title p {
-    font-size: 12px;
+    font-size: 16px;
     margin: 5px;
+}
+
+.card-image {
+    background-repeat: none;
+    background-size: cover;
+    position: relative;
+}
+
+.small-card {
+    width: 385px;
+    height: 300px;
 }
 
 #villager-bingo {
     background-image: url(../images/villager-bingo.PNG);
-    background-repeat: none;
-    background-size: cover;
     width: 800px;
     height: 600px;
-    position: relative;
 }
 
 .layer {
@@ -165,45 +200,20 @@ header img {
 
 #random-generator {
     background-image: url(../images/villager-generator.PNG);
-    background-repeat: none;
-    background-size: cover;
-    width: 385px;
-    height: 300px;
-    position: relative;
 }
 
 #horiseon {
     background-image: url(../images/Horiseon.PNG);
-    background-repeat: none;
-    background-size: cover;
-    width: 385px;
-    height: 300px;
-    position: relative;
 }
 
 .coming-soon {
     background-image: url(../images/coming-soon.jpeg);
-    background-repeat: none;
-    background-size: cover;
-    width: 385px;
-    height: 300px;
-    position: relative;
 }
-
-/* #bingo-title {
-    position: absolute;
-    bottom: 20px;
-    left: 0px;
-} */
 
 .work-container {
     position: relative;
-    border: 5px solid #81cece;
+    border: 5px solid var(--aqua);
     margin: 10px;
-}
-
-#contact .bottom-contact {
-    height: 150px;
 }
 
 @media  screen and (min-width: 768px) {
@@ -219,14 +229,14 @@ header img {
             flex-direction: column;
         }
         
-        .tablet-w25 {    
-            width: 25%;
+        .tablet-w20 {    
+            width: 20%;
         }
 
-        .tablet-w75 {
-            width: 75%;
+        .tablet-w80 {
+            width: 80%;
             border-top: 0px;
-            border-left: 5px solid #3f587a; 
+            border-left: 5px solid var(--blue); 
             align-items: center;
         }
 
