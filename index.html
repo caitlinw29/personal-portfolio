@@ -1,74 +1,111 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="utf-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <title>Caitlin Wall Portfolio</title>
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link rel="stylesheet" href="./assets/css/style.css">
-    </head>
-    <body>
-        <header class="column header">
-            <div class="column tablet-row">
-                <h1 class="column"> <span class="color-box">Caitlin Wall</span></h1>
-                <nav class="column nav">
-                    <ul>
-                        <li><a href="#about">About Me</a></li>
-                        <li><a href="#work">Work</a></li>
-                        <li><a href="#contact">Contact Me</a></li>
-                        <li><a href="#">Resume</a></li>
-                    </ul>
-                </nav>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Caitlin Wall Portfolio</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="./assets/css/style.css">
+</head>
+
+<body>
+    <header class="column header">
+        <div class="column tablet-row">
+            <h1 class="column"> <span class="color-box">Caitlin Wall</span></h1>
+            <img class="flex-grow-0" src="./assets/images/personal-picture.JPG" alt="Picture of Caitlin" />
+            <nav class="column nav">
+                <ul>
+                    <li><a href="#about">About Me</a></li>
+                    <li><a href="#work">Work</a></li>
+                    <li><a href="#contact">Contact Me</a></li>
+                    <li><a href="#">Resume</a></li>
+                </ul>
+            </nav>
+        </div>
+        <div class="back-image">
+            <p class="text-overlay"> Welcome to my page! </p>
+        </div>
+    </header>
+    <main>
+        <section id="about" class="box column tablet-row">
+            <h2 class="tablet-w25">About Me</h2>
+            <div class="tablet-row border tablet-w75">
+                <p>
+                    Hello! Thank you for checking out my portfolio. I am currently shifting careers from being an
+                    Elementary School Teacher to being a Full-Stack Developer.
+                    I am completing the GA Tech Coding Boot Camp, and have a couple months of self-study under my belt
+                    already. I enjoy debugging code, and absolutely love making interactive web pages.
+                    Please feel free to check out some of my favorite projects and connect with me below!
+                </p>
             </div>
-            <div class="back-image">
-                <p class="text-overlay"> Welcome to my page! </p>
+        </section>
+        <section id="work" class="box column tablet-row">
+            <h2 class="tablet-w25">Work</h2>
+            <div class="tablet-w75 border column">
+                <div class="row">
+                    <a href="https://caitlinw29.github.io/practiceProjects/ACNH_bingo/index.html" target="_blank">
+                        <figure class="work-container">
+                            <div id="villager-bingo"> <div class="layer"></div></div>
+                            <div class="card-title">
+                                <h3>ACNH Bingo </h3>
+                                <p class="small-text">HTML/CSS/JS</p>
+                            </div>
+                        </figure>
+                    </a>
+                </div>
+                <div class="row">
+                    <a href="https://caitlinw29.github.io/practiceProjects/ACNH_randomVillager/index.html" target="_blank">
+                        <figure class="work-container">
+                            <div id="random-generator"> <div class="layer"></div></div>
+                            <div class="card-title">
+                                <h3>ACNH Random <br>Villager Generator </h3>
+                                <p>HTML/CSS/JS</p>
+                            </div>
+                        </figure>
+                    </a>
+
+                    <a href="https://caitlinw29.github.io/code-refactor/" target="_blank">
+                        <figure class="work-container">
+                            <div id="horiseon"><div class="layer"></div> </div>
+                            <div class="card-title">
+                                <h3>Horiseon Refactoring</h3> 
+                                <p>HTML/CSS</p>
+                            </div>
+                        </figure>
+                    </a>
+                </div>
+                <div class="row">
+                    <a href="./assets/html/coming-soon.html" target="_blank">
+                        <figure class="work-container">
+                            <div class="coming-soon"> <div class="layer"></div></div>
+                            <h3 class="card-title"> WIP</h3>
+                        </figure>
+                    </a>
+
+                    <a href="./assets/html/coming-soon.html" target="_blank">
+                        <figure class="work-container">
+                            <div class="coming-soon"> <div class="layer"></div></div>
+                            <h3 class="card-title"> WIP</h3>
+                        </figure>
+                    </a>
+                </div>
             </div>
-        </header> 
-        <main> 
-            <section id="about" class="box column tablet-row">
-                <h2 class="tablet-w25">About Me</h2>
-                <div class="tablet-row border tablet-w75">
-                    <p>
-                        Hello! Thank you for checking out my portfolio. I am currently shifting careers from being an Elementary School Teacher to being a Full-Stack Developer.
-                        I am completing the GA Tech Coding Boot Camp, and have a couple months of self-study under my belt already. I enjoy debugging code, and absolutely love making interactive web pages.
-                        Please feel free to check out some of my favorite projects and connect with me below! 
-                    </p>
-                    <img class="flex-grow-0" width="300" src="./assets/images/personal-picture.JPG" alt="Picture of Caitlin" />
-                </div>
-            </section>
-            <section id="work" class="box column tablet-row">
-                <h2 class="tablet-w25">Work</h2>
-                <div class="tablet-w75 border">
-                            <img class="lg-responsive-img" src="./assets/images/villager-bingo.PNG" alt="Animal Crossing Bingo Game" />
-                            <div class="overlay"></div>
-                            <p>ACNH Bingo <br> <span>HTML/CSS/JS</span></p>
-                        
-                            <img class="responsive-img" src="./assets/images/villager-generator.PNG" alt="Animal Crossing Villager Generator" />
-                            <div class="overlay"></div>
-                        
-                            <img class="responsive-img" src="./assets/images/Horiseon.PNG" alt="Horiseon web page" />
-                            <div class="overlay"></div>
-                        
-                            <img class="responsive-img" src="./assets/images/coming-soon.jpeg" alt="Coming Soon" />
-                            <div class="overlay"></div>
-                       
-                            <img class="responsive-img" src="./assets/images/coming-soon.jpeg" alt="Coming Soon" />
-                            <div class="overlay"></div>
-                </div>
-                        
-            </section>
-            <section id="contact" class="box column tablet-row">
-                <h2 class="tablet-w25">Contact Me</h2>
-                <div class="tablet-w75 border bottom-contact">
-                    <ul>
-                        <li><a href="tel:678-908-1670">678-908-1670</a></li>
-                        <li><a href="mailto:caitlinwall96@gmail.com">caitlinwall96@gmail.com</a></li>
-                        <li><a href="">Github</a></li>
-                        <li><a href="">LinkedIn</a></li>
-                        <li><a href="">AngelList</a></li>
-                    </ul>
-                </div>
-            </section>
-        </main>
-    </body>
+
+        </section>
+        <section id="contact" class="box column tablet-row">
+            <h2 class="tablet-w25">Contact Me</h2>
+            <div class="tablet-w75 border bottom-contact">
+                <ul>
+                    <li><a href="tel:678-908-1670">678-908-1670</a></li>
+                    <li><a href="mailto:caitlinwall96@gmail.com">caitlinwall96@gmail.com</a></li>
+                    <li><a href="">Github</a></li>
+                    <li><a href="">LinkedIn</a></li>
+                    <li><a href="">AngelList</a></li>
+                </ul>
+            </div>
+        </section>
+    </main>
+</body>
+
 </html>
