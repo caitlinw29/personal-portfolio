@@ -177,9 +177,17 @@ header img {
     background-image: url(../images/Horiseon.PNG);
 }
 
-.coming-soon {
-    background-image: url(../images/coming-soon.jpeg);
+#pokeBattle {
+    background-image: url(../images/pokeBattle-SS.png);
 }
+
+#day-planner {
+    background-image: url(../images/day-planner.png);
+}
+
+/* .coming-soon {
+    background-image: url(../images/coming-soon.jpeg);
+} */
 
 .layer { /*Semi-transparent color overlay*/
     background-color: rgba(141, 160, 245, 0.7); 
