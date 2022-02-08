@@ -164,8 +164,8 @@ header img {
     height: 300px;
 }
 
-#villager-bingo { /*Large image*/
-    background-image: url(../images/villager-bingo.PNG);
+#monkey { /*Large image*/
+    background-image: url(../images/landing.png);
     width: 800px;
     height: 600px;
 }
